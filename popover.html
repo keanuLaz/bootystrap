@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Popover</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>            
+      </button>
+      <a class="navbar-brand">Bootstrap</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+         <li><a href="index.html">House</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Lessons<span class="caret"></span></a>
+             <ul class="dropdown-menu scrollable-menu" role="menu">
+                                <li> <a href="typography.html">Typography</a> </li>
+                                <li> <a href="tables.html">Tables</a> </li>
+                                <li> <a href="images.html">Images</a> </li>
+                                <li> <a href="jumbotron.html">Jumbotron</a> </li>
+                                <li> <a href="wells.html">Wells</a> </li>
+                                <li> <a href="alerts.html">Alerts</a> </li>
+                                <li> <a href="buttons.html">Buttons</a> </li>
+                                <li> <a href="buttongrp.html">Button Groups</a> </li>
+                                <li> <a href="glyph.html">Glyphicons</a> </li>
+                                <li> <a href="badla.html">Badges/Labels</a> </li>
+                                <li> <a href="prog.html">Progress Bars</a> </li>
+                                <li> <a href="pag.html">Pagination</a> </li>
+                                <li> <a href="pager.html">Pager</a> </li>
+                                <li> <a href="ligr.html">List Groups</a> </li>
+                                <li> <a href="panels.html">Panels</a> </li>
+                                <li> <a href="dropdown.html">Dropdown</a> </li>
+                                <li> <a href="colla.html">Collapse</a> </li>
+                                <li> <a href="tabi.html">Tabs/Pills</a> </li>
+                                <li> <a href="navb.html">Navbar</a> </li>
+                                <li> <a href="forms.html">Forms</a> </li>
+                                <li> <a href="inputs.html">Inputs</a> </li>
+                                <li> <a href="inputstwo.html">Inputs2</a> </li>
+                                <li> <a href="inputsize.html">Input Sizing</a> </li>
+                                <li> <a href="medob.html">Media Objects</a> </li>
+                                <li> <a href="carousel.html">Carousel</a> </li>
+                                <li> <a href="modal.html">Model</a> </li>
+                                <li> <a href="tooltip.html">Tooltip</a> </li>
+                                <li> <a href="popover.html">Popover</a> </li>
+                                <li> <a href="scrollspy.html">Scrollspy</a> </li>
+                                <li> <a href="affix.html">Affix</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+    
+    
+    	<div class="col-sm-8">
+			<br>
+			<br>
+			<br>
+            <h1>Bootstrap Popover</h1>
+           
+            <a href="tooltip.html" class="btn btn-default" role="button">Previous</a>   
+
+            <a href="scrollspy.html" class="btn btn-success" role="button">Next</a>
+            <hr>
+    </div>
+    
+<div class="col-sm-8">
+<h3>The Popover Plugin</h3>
+    <p>The Popover plugin is similar to tooltips; it is a pop-up box that appears when the user clicks on an element. The difference is that the popover can contain much more content.</p>
+  <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+	
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<p align="center">Dank Memes. Copyright 2017</p>
+	</div>
+</div>
+</body>
+</html>
